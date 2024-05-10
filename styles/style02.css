@@ -1,0 +1,333 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+   
+}
+body{
+    font-size: 15px;
+    line-height: 25px;
+    background-image: url(../images/image/rec.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    width: 100%;
+    z-index: 1;
+    transition: 0.5s;
+   
+
+    
+}
+
+.nav-bar .title{
+    color:rgb(214, 209, 209);
+  font-family:Whisper;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-decoration:none ;
+  margin-left: 10px;
+ 
+}
+.nav-bar .title span {
+    color: rgb(83, 48, 128);
+    font-family: whisper;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+   
+}
+.menu li a {
+    text-decoration: none;
+    list-style: none;
+    color:rgb(234, 234, 236);
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition:0.5s ease;
+    
+
+
+
+    
+}
+.menu li a:hover{
+    color: rgb(83, 48, 128);
+    padding:10px 20px;
+    border:2px solid white;
+    font-family: Poppins;
+
+}
+.nav-bar p{
+    position:absolute;
+    margin-top: 60px;
+    color: rgb(83, 48, 128);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.title span{
+    color: rgb(83, 48, 128);
+}
+.titrem span{
+    color: rgb(83, 48, 128);
+    font-family: whisper;
+    font-size: 2em;
+}
+.titrem{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-family: whisper;
+   }
+   .titrem h2{
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    padding-top:80px ;
+    color: #fff;
+    font-family: whisper;
+
+}
+
+
+.section3{
+   
+    padding: 0;
+    margin-top: 0;
+    
+}
+
+.galleri{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.image-food{
+    width: 30vw;
+    height: 25vw;
+    object-fit: cover;
+    box-shadow: 0.3rem 0.3rem 0.1rem rgb(83, 48, 128);
+    transition: all 0.5s;
+}
+.galleri-link:hover .image-food{
+    box-shadow: 1rem 1rem 0.1rem rgb(83, 48, 128);
+    filter: blur(0.5rem);
+}
+.galleri-link{
+    position: relative;
+    margin: 4rem 1rem;
+}
+.galleri-link::before{
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    height: 0;
+    background-color: #fff;
+    top: 2vw;
+    left: 80%;
+    transition: height 0.5s;
+
+}
+.galleri-link:hover::before{
+    height: 80%;
+}
+
+.galleri-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    top: 15%;
+    left: 2rem;
+    transition: width 0.5s ;
+    
+}
+.galleri-link:hover::after{
+    width: 90%;
+}
+.food-name{
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 10px;
+    top: 3px;
+    left: 3px;
+    font-size: 1.5rem;
+    font-weight:700 ;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color:#fff;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+.galleri-link:hover .food-name{
+    width: 100%;
+    transition: width 1.50s 0.5s;
+    
+}
+.galleri-link:hover .food-des{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
+.food-des{
+    position: absolute;
+    bottom: 3vw;
+    left: 2rem;
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform:uppercase ;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+button{
+    text-align: center;
+    height: 30px;
+    color: black;
+    margin-top: 0;
+    margin-left: 120px;
+    margin-bottom: 0px;
+    border: 1px solid rgb(83, 48, 128);
+    color: black;
+    background: rgb(83, 48, 128);
+    transition: 0.1s ease;
+    cursor: pointer;
+    width: 100px;
+    text-transform: uppercase;
+    margin-top: 0;
+ }
+ button:hover{
+    background: none;
+    border: 1px solid black;
+ }
+ 
+ .prix{
+    margin-top: 0;
+    font-size: large;
+    font-weight: bold;
+ }
+ .titre-texte~p{
+    font-size: 2em ;
+    font-family:whisper;
+    font-weight:lighter;
+    color: white;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert{
+    margin-top: 10rem;
+    background-image: url(../images/image/equipe.jpg);
+    background-size:contain;
+    margin-top: -100px;
+    padding-bottom: 100px;
+    padding-top: 150px;
+}
+.expert .contenu{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.expert .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.expert .contenu{
+    display:flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    
+    margin-top: 40px;
+    
+}
+.expert .contenu .box{
+    width: 250px;
+    margin-right: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 5px;
+    left: 0;
+    object-fit: cover;
+    border-radius:50% ;
+}
+
+
+.titre-texte{
+    color: rgb(252, 248, 248);
+    font-size: 3em;
+    font-weight: 300px;
+    text-transform: capitalize;
+    padding-top: 2.5em;
+    justify-content: center;
+    margin-left: 10em;
+    margin-bottom: 2em;
+    font-family:whisper;
+    
+}
+.titre-texte span{
+color:rgb(83, 48, 128);
+font-size:1.7em ;
+font-weight:500px;
+margin-left: 0.5em;
+font-family:whisper;
+}
+.titre-texte~p{
+    margin-top: 1rem;
+    font-size: 2.5em ;
+    font-family:whisper;
+    margin-left: 1em;
+    margin-left: 1em;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+.texte h3{
+    color: white;
+    font-family: whisper;
+    font-size: 2.2em;
+    padding-top: 45px;
+    text-align: center;
+}

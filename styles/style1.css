@@ -1,0 +1,270 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+.nav-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 10px 20px;
+}
+.nav-bar .title{
+    font-family: whisper;
+    color:rgb(214, 209, 209);;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration:none ;
+    margin-left: 10px;
+
+}
+.nav-bar .title span{
+        color: rgb(83, 48, 128);
+        font-family:Whisper;
+}
+.menu li{
+    list-style: none;
+    display:inline-block;
+   
+}
+.menu li a {
+    
+    list-style: none;
+    font-size: 20px;
+    text-transform:uppercase;
+    transition:0.5s ease ;
+    color: rgb(214, 209, 209);;
+    text-decoration: none;
+    margin-left:10px;
+    font-weight:700;
+    
+}
+.menu li a:hover{
+    color:rgb(83, 48, 128);
+    padding:10px 20px;
+    border: solid;
+    border-color: white;
+
+}
+.nav-bar p{
+    position:absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+    color: rgb(83, 48, 128);
+    font-size: 20 ;
+   
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/image/bac.png) ;
+    background-size: contain;
+   
+}
+
+.banniere .contenu{
+    max-width:70% ;
+    text-align: center;
+}
+.banniere .contenu h2{
+    color: white;
+    font-size: 3em;
+    font-family:Whisper;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.contenu p:nth-child(2){
+    color: white;
+    font-size:  large;
+}
+.btn1{
+    font-size: 1.2em;
+    color:white ;
+    background: rgb(83, 48, 128);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 2em;
+    text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 2px;
+transition: 0.5s;
+margin-left: 10px;
+
+}
+.btn2{
+     font-size: 1.2em;
+    color:white ;
+    background:rgb(83, 48, 128);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 2em;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 2px;
+transition: 0.5s;
+margin-left: 10px;
+
+}
+.btn1:hover{
+    letter-spacing: 4px;
+
+}
+.section{
+    padding: 100px;
+
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ .row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.row .col50 h2{
+ margin-bottom: 20px;
+ text-decoration: underline;
+ 
+
+}
+.titre-texte{
+    color: black;
+    font-size: 3em;
+    font-weight: 300px;
+    text-transform: capitalize;
+    padding-top: 2.5em;
+    justify-content: center;
+    font-family:whisper;
+    
+}
+.titre-texte span{
+color:rgb(83, 48, 128);
+font-size:1.7em ;
+font-weight:500px;
+margin-left: 0.5em;
+font-family:whisper;
+
+}
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+    margin-top: 5em;
+    border-radius: 50%;
+
+
+}
+ .titre-texte~p{
+    font-size: 2em ;
+    font-family:whisper;
+    font-weight:lighter;
+    margin-left: 20px;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert{
+    margin-top: -100px;
+    background-image: url(../images/image/sign.jpg);
+    background-size:contain;
+}
+.expert .contenu{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.expert .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+ .event{
+ margin-left: 130px;
+ 
+ }
+.event~span{
+    font-size: 2em ;
+    font-family:whisper;
+    font-weight:lighter;
+    margin-left: 0.5em;
+}
+.expert{
+    margin-top: -100px;
+
+}
+.expert .contenu{
+    display:flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    
+    margin-top: 40px;
+    
+}
+.expert .contenu .box{
+    width: 250px;
+    margin-right: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 5px;
+    left: 0;
+    object-fit: cover;
+    border-radius:50% ;
+}
+.banniere .bio{
+ 
+    font-size: 2.7em;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.text h3{
+    color: white;
+    font-family: whisper;
+    font-size: 25px;
+}
+.titre .titre-texte{
+    color: white;
+   
+}
+.titre .titre-texte~p{
+    color: white;
+    font-family:whisper;
+    font-weight: bold;
+}
